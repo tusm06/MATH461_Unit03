@@ -38,7 +38,23 @@ A fire backdraft occurs when a depleted oxygen fire compartment suddenly receive
 
 $$\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = \nu \frac{\partial^2 u}{\partial x^2}$$
 
+Conservation form:
+$$u_t + \left(\frac{u^2}{2}\right)_x = \nu u_{xx}$$
+
 This captures the essential nonlinear advection and shock formation. The viscous term prevents unphysical discontinuities and regularizes the shock thickness.
+
+**Initial Condition:**
+
+$$u(x,0) = \begin{cases} u_H & x < x_0 \\ u_L & x > x_0 \end{cases}$$
+
+where $x_0$ is the initial shock position. In the code, this step function is smoothed using a tanh transition to avoid numerical oscillations while maintaining the shock structure.
+
+**Boundary Conditions (Dirichlet):**
+
+$$u(0,t) = u_H \quad \text{(left boundary: burnt gas velocity)}$$
+$$u(L,t) = u_L \quad \text{(right boundary: fresh air velocity)}$$
+
+These hold the boundary velocities fixed, maintaining the driving pressure gradient that sustains shock propagation.
 
 **How will you answer your question?**
 
