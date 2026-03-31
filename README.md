@@ -1,7 +1,6 @@
 ## Problem description
 *Describe, in words, the situation you would like to model*.
 
-**Ideas**
 In a cooking environment with one place that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
 
 ## Question formulation
