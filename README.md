@@ -2,11 +2,7 @@
 *Describe, in words, the situation you would like to model*.
 
 **Ideas**
-1. We would like to model a situation of adding suger into a box rectangular container with water, and observe the steady state of it, i.e., it do not take in more suger. We add suger to the center of the box. 
-
-2. Backdraft of the fire, we would like to model the danger of the fire backdraft, and how long does the shock wave reach the person when opening the door.
-
-3. In a cooking environment with one place that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
+In a cooking environment with one place that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
 
 ## Question formulation
 *What question(s) would you like to answer about your setup above?*
