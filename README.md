@@ -1,10 +1,14 @@
 ## Problem description
 *Describe, in words, the situation you would like to model*.
 
-In a cooking environment with one place that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
+In a cooking environment with one window that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
 
 ## Question formulation
 *What question(s) would you like to answer about your setup above?*
+
+- What size of window should it be (what the value of heat dissipation should reach) so that the chef can work in a sufferable temperature?
+- What the temperature distribution in the cooking room when the temperature reach the steady state?
+- Without the heat dissipation, how long will it take the room to reach the steady state?
 
 ## Mathematical model
 *Identify variables, parameters, equations. List your assumptions. Identify the mathematical quantity you will evaluate, in order to answer your question.*
