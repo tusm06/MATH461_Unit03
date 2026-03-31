@@ -19,6 +19,12 @@ In a cooking environment with one window that heat can escape the room, the only
 
 **Assumptions:**
 
+- The only way to make heat dissipation is the opened window.
+
+- The stove is the only heat source, and can provide heat continuesly.
+
+- the wok is not effect the heat transfering from the stove.
+
 **Variables** 
 
 **Parameters:**
