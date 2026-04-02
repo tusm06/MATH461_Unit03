@@ -32,17 +32,17 @@ In a cooking environment with one window that heat can escape the room, the only
 
 **Variables and parameters**
 
-| Symbol | Meaning | Type / role | Dimension | Units |
+| Symbol | Meaning | Type | Dimension | Units |
 |:---:|:---|:---:|:---:|:---:|
 | $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | - | K |
 | $t$ | Time | Independent variable | T | s |
-| $x$ | Horizontal position in room | Spatial coordinate | L | m |
-| $y$ | Vertical position in room | Spatial coordinate | L | m |
-| $z$ | Height of the kichen | Spatial coordinate | L | m|
-| $r$ | Radius of the stove | Spatial coordinate | L | m |
-| $\alpha$ | Thermal diffusivity of air | Diffusion coefficient (parameter) | $L^2/T$ | m^2/s |
-| $\beta$ | Heat dissipation rate (volumetric loss) | Sink coefficient (parameter) | $1/T$ | s^-1 |
-| $\gamma$ | Constant heater source rate (stove heat input) | Source coefficient (parameter) | $\theta/T$ | K/s |
+| $x$ | Horizontal position in room | variable | L | m |
+| $y$ | Vertical position in room | variable | L | m |
+| $z$ | Height of the kichen | variable | L | m|
+| $r$ | Radius of the stove | variable | L | m |
+| $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
+| $\beta$ | Heat dissipation rate (volumetric loss) | parameter | $1/T$ | s^-1 |
+| $\gamma$ | Constant heater source rate (stove heat input) | parameter | $\theta/T$ | K/s |
 
 **Domain:**
 
