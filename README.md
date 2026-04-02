@@ -87,7 +87,17 @@ $$
 \frac{dT}{dt} = -k(T-T_a)
 $$
 
-where $T_a$ is the ambient temperature.
+where $T_a$ is the ambient temperature, to make this equation in the form of our variable, we make $u$ represent the $T$ in the formula, and make the $T_a$ have the value of the room temperature, hence:
+
+$$
+u_t = -k(u-T_a)
+$$
+
+which is the rate of heat loss, i.e., the $\beta$, hence,
+
+$$
+\beta (x,y,t) = - k (u-T_a)
+$$
 
 **Initial condition:**
 - u(x, y, 0) = room temperature.
