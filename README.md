@@ -76,8 +76,9 @@ $$
 u_t = \alpha (u_{xx} + u_{yy}) + S(x, y, t) - \beta u , 
 $$
 
+<!--*TODO: See if beta can be a function*--> 
+
 where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
-- $S(x, y, t) = C\cdot 1_{\sqrt{x^2 + y^2}<r}(x, y)$. Solve for C.
 - $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
 
 **Initial condition:**
@@ -93,4 +94,6 @@ where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model su
 - We use numerical methods to simulate and see the results of the heat to the chef.
     - By changing the size of the window (i.e., changing $\beta$).
 - Stability analysis to check the stability of the model.
+- How long will the heat reach a certain threshold if not heat escape.
 
+<!--*TODO:  *--> 
