@@ -81,6 +81,12 @@ $$
 where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
 - $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
 
+And for $\beta$, to make it to a function of $x, y, t$, we can use the Newton's heat law, 
+
+$$
+\frac{dT}{dt} = -k(T-T_a)
+$$
+
 **Initial condition:**
 - u(x, y, 0) = room temperature.
 
