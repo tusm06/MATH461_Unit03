@@ -3,19 +3,19 @@
 <img src="data/461_Kitchen-layout.png" height="400" width="400">
 
 ## Problem description
-*Describe, in words, the situation you would like to model*.
+<!--**Describe, in words, the situation you would like to model*.*-->
 
 In a cooking environment with one window that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
 
 ## Question formulation
-*What question(s) would you like to answer about your setup above?*
+<!--* *What question(s) would you like to answer about your setup above?* *-->
 
 - What size of window should it be (what the value of heat dissipation should reach) so that the chef can work in a sufferable temperature?
 - What the temperature distribution in the cooking room when the temperature reach the steady state?
 - Without the heat dissipation, how long will it take the room to reach the steady state?
 
 ## Mathematical model
-*Identify variables, parameters, equations. List your assumptions. Identify the mathematical quantity you will evaluate, in order to answer your question.*
+<!--* *Identify variables, parameters, equations. List your assumptions. Identify the mathematical quantity you will evaluate, in order to answer your question.* *-->
 
 <!--*These steps should probably be done simultaneously, not in order -- as you refine your equations, you will need to update your assumptions, etc. Furthermore, you might want to start with the last point, how to answer your question, and work backwards to determine what variables/parameters you need to do this.*
 
@@ -81,7 +81,7 @@ where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model su
 - $u_y(x, -2, t) = u_y(x, 2, t)$
 
 ## How will you answer your question?
-*Identify a mathematical quantity you will evaluate and criteria for evaluating it*
+<!--* *Identify a mathematical quantity you will evaluate and criteria for evaluating it* *-->
 
 - We use numerical methods to simulate and see the results of the heat to the chef.
     - By changing the size of the window (i.e., changing $\beta$).
