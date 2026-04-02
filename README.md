@@ -45,6 +45,12 @@ In a cooking environment with one window that heat can escape the room, the only
 | $\beta$ | Heat dissipation rate (volumetric loss) | parameter | $1/T$ | s^-1 |
 | $\gamma$ | Constant heater source rate (stove heat input) | parameter | $\theta/T$ | K/s |
 
+**Constraints:**
+- $t\ge0$.
+- $(x, y)\in \Omega$
+- $z, r\ge0$
+- $\alpha, \beta, \gamma\in\mathbb{R}$
+
 **Domain:**
 
 Since the room is not very high, we consider the room as 2D with domain:
