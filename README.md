@@ -1,6 +1,6 @@
 # Simulating heat in kitchen
 
-<img src="data/461_Kitchen-layout.png" height="400" width="400">
+<img src="data/Kitchen_veiw.png" height="400" width="400">
 
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
