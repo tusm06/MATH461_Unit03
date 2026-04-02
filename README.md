@@ -29,6 +29,7 @@ In a cooking environment with one window that heat can escape the room, the only
     - Simulating the countinuous cooking environment in a resturant.
 - the wok is not effect the heat transfering from the stove.
 - the dissipation rate will stay constant.
+- The temperature is transfored only in the horizontal and vertical direction of the birdview, the heat transfered in  height of the kitchen is ignored.
 
 **Variables and parameters**
 
