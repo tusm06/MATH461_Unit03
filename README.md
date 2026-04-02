@@ -66,6 +66,7 @@ Since we need the heat to escape in a way, we introduce a new loss term, $-\beta
 $$
 u_t = \alpha (u_{xx} + u_{yy}) + S(x, y, t) - \beta u , 
 $$
+
 where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
 - $S(x, y, t) = C\cdot 1_{\sqrt{x^2 + y^2}<r}(x, y)$. Solve for C.
 - $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
