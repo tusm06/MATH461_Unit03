@@ -87,6 +87,8 @@ $$
 \frac{dT}{dt} = -k(T-T_a)
 $$
 
+where $T_a$ is the ambient temperature.
+
 **Initial condition:**
 - u(x, y, 0) = room temperature.
 
