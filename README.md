@@ -47,9 +47,11 @@ In a cooking environment with one window that heat can escape the room, the only
 **Domain:**
 
 Since the room is not very high, we consider the room as 2D with domain:
+
 $$
 \Omega = [-1.5, 1.5]\times[-2, 2]
 $$
+
 - The heat is added to the room at $(1.2, 0)$ (the location of the stove). 
 - The stove has a radius of $r$.
 
