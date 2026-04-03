@@ -5,7 +5,7 @@
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
 
-In a cooking environment with one window that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
+In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
 
 ## Question formulation
 <!--* *What question(s) would you like to answer about your setup above?* *-->
@@ -81,7 +81,7 @@ $$
 where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
 - $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
 
-And for $\beta$, to make it to a function of $x, y, t$, we can use the Newton's heat law, 
+And for $\beta$, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. On the other hand we can also bake $\beta$ as a function that simulates the heat taken away by a window. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
 
 $$
 \frac{dT}{dt} = -k(T-T_a)
