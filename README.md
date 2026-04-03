@@ -1,11 +1,11 @@
-# Simulating heat in kitchen
+x# Simulating heat in kitchen
 
 <img src="data/Kitchen_veiw.png" height="400" width="400">
 
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
 
-In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temerature distribution within a room.
+In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect xthe chef, and the temerature distribution within a room.
 
 ## Question formulation
 <!--* *What question(s) would you like to answer about your setup above?* *-->
@@ -41,6 +41,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 | $y$ | Vertical position in room | variable | L | m |
 | $z$ | Height of the kichen | variable | L | m|
 | $r$ | Radius of the stove | variable | L | m |
+| $T_a$ | Room temerature. | parameter | $\theta$ | K |
 | $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
 | $\beta$ | Heat dissipation rate (volumetric loss) | parameter | $1/T$ | s^-1 |
 | $\gamma$ | Constant heater source rate (stove heat input) | parameter | $\theta/T$ | K/s |
