@@ -1,6 +1,6 @@
-x# Simulating heat in kitchen
+# Simulating heat in kitchen
 
-<img src="data/Kitchen_veiw.png" height="400" width="400">
+<img src="data/Kitchen_veiw_square.png" height="400" width="400">
 
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
@@ -57,7 +57,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 Since the room is not very high, we consider the room as 2D with domain:
 
 $$
-\Omega = [-1.5, 1.5]\times[-2, 2]
+\Omega = [0, 3]\times[0, 3]
 $$
 
 - The heat is added to the room at $(1.2, 0)$ (the location of the stove). 
