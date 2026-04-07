@@ -106,8 +106,8 @@ $$
 - u(x, y, 0) = room temperature.
 
 **Boundary conditions:**
-- $u_x(-1.5, y, t) = u_x(1.5, y, t)$
-- $u_y(x, -2, t) = u_y(x, 2, t)$
+- $u_x(0, y, t) = u_x(3, y, t) = 0$
+- $u_y(x, 0, t) = u_y(x, 3, t) = 0$
 
 ## How will you answer your question?
 <!--* *Identify a mathematical quantity you will evaluate and criteria for evaluating it* *-->
