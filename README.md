@@ -82,7 +82,9 @@ $$
 where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
 - $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
 
-And for $\beta$, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. On the other hand we can also bake $\beta$ as a function that simulates the heat taken away by a window. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
+And for heat loss, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. 
+
+On the other hand we can also bake $\beta$ as a function that simulates the heat taken away by a window. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
 
 $$
 \frac{dT}{dt} = -k(T-T_a)
@@ -94,10 +96,10 @@ $$
 u_t = -k(u-T_a)
 $$
 
-which is the rate of heat loss, i.e., the $\beta$, hence,
+which is the heat loss, i.e., the $L$, hence,
 
 $$
-\beta (x,y,t) = - k (u-T_a)
+L (x,y,t) = - k (u(x, y, t)-T_a)
 $$
 
 **Initial condition:**
