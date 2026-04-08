@@ -74,20 +74,18 @@ $$
 Since we need the heat to escape in a way, we introduce a new loss term, $-\beta u$, that describes heat dissipation (loss of heat) such that 
 
 $$
-u_t = \alpha (u_{xx} + u_{yy}) + S(x, y, t) - L(u), 
+u_t = \alpha (u_{xx} + u_{yy}) + S(x, y) - L(u), 
 $$
 
-where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use Gaussian model such as 
+where we need $z\displaystyle\int\int S(x, y) dxdy = \gamma$. We can use Gaussian model such as 
 
 $$
-S(x, y, t) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.4)^2}{2\cdot \sigma}\right) ,
+S(x, y) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.4)^2}{2\cdot \sigma}\right) ,
 $$
 
 where $\sigma$ is the standard deviation. For instance, we can set $\sigma = 0.1$.
 
-Next, for heat loss, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. 
-
-On the other hand we can also bake $\beta$ as a function that simulates the heat taken away by a window. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
+Next, for heat loss, we can consider $\beta u$ as our sink term, so that the heat is taken away by central air conditioning. On the other hand we can also take $L$ as a function that simulates the heat taken away by a central air conditioning. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
 
 $$
 \frac{dT}{dt} = -k(T-T_a)
@@ -106,7 +104,7 @@ L (u) = - k (u - T_a)
 $$
 
 **Initial condition:**
-- u(x, y, 0) = room temperature.
+- $u(x, y, 0)$ = room temperature.
 
 **Boundary conditions:**
 - $u_x(0, y, t) = u_x(3, y, t) = 0$
