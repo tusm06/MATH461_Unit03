@@ -77,10 +77,15 @@ $$
 u_t = \alpha (u_{xx} + u_{yy}) + S(x, y, t) - L(u), 
 $$
 
-where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use model such as 
-- $S(x, y, t) = \dfrac{\gamma/z}{\sqrt{2\pi \cdot 0.1}}e^{-\dfrac{(x^2 + y^2)}{2\cdot 0.1}}$. (A Gaussian with s.d. $0.1$.)
+where we need $z\displaystyle\int S(x, y, t) dxdy = \gamma$. We can use Gaussian model such as 
 
-And for heat loss, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. 
+$$
+S(x, y, t) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.4)^2}{2\cdot \sigma}\right) ,
+$$
+
+where $\sigma$ is the standard deviation. For instance, we can set $\sigma = 0.1$.
+
+Next, for heat loss, we can consider $\beta$ as a constant, so that the heat is taken away by central air conditioning. 
 
 On the other hand we can also bake $\beta$ as a function that simulates the heat taken away by a window. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
 
