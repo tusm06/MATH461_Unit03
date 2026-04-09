@@ -88,7 +88,7 @@ where $\sigma$ is the standard deviation. For instance, we can set $\sigma = 0.1
 Next, for heat loss, we can consider $\beta u$ as our sink term, so that the heat is taken away by central air conditioning. On the other hand we can also take $L$ as a function that simulates the heat taken away by a central air conditioning. To make it to a function of $x, y, t$, we can use the Newton's heat law, 
 
 $$
-\frac{dT}{dt} = -k(T-T_a)
+\frac{dT}{dt} = -\beta(T-T_a)
 $$
 
 where $T_a$ is the ambient temperature, to make this equation in the form of our variable, we make $u$ represent the $T$ in the formula, and make the $T_a$ have the value of the room temperature, hence:
@@ -100,7 +100,7 @@ $$
 which is the heat loss, i.e., the $L$, hence,
 
 $$
-L (u) = - k (u - T_a)
+L (u) = - \beta (u - T_a)
 $$
 
 **Initial condition:**
