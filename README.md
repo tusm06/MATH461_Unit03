@@ -44,7 +44,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 | $T_a$ | Room temerature. | parameter | $\theta$ | K |
 | $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
 | $\beta$ | Heat dissipation rate (volumetric loss) | parameter | $1/T$ | s^-1 |
-| $\gamma$ | Constant heater source rate (stove heat input) | parameter | $\theta/T$ | K/s |
+| $\gamma$ | Constant heater source rate (stove heat input) | parameter | $(\theta L \sqrt{L} )/T$ | (K m $\sqrt{m}$)/s |
 
 **Constraints:**
 - $t\ge0$.
