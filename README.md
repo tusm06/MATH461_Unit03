@@ -50,7 +50,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 - $t\ge0$.
 - $(x, y)\in \Omega$
 - $z, r\ge0$
-- $\alpha, \beta, \gamma\in\mathbb{R}$
+- $\alpha, \beta, \gamma > 0$
 
 **Domain:**
 
