@@ -74,7 +74,7 @@ $$
 Since we need the heat to escape in a way, we introduce a new loss term, $-\beta u$, that describes heat dissipation (loss of heat) such that 
 
 $$
-u_t = \alpha (u_{xx} + u_{yy}) + S(x, y) - L(u), 
+u_t = \alpha (u_{xx} + u_{yy}) + S(x, y) + L(u), 
 $$
 
 where we need $z\displaystyle\int\int S(x, y) dxdy = \gamma$. We can use Gaussian model such as 
