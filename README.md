@@ -32,7 +32,7 @@ In a cooking environment where heat is removed by air conditioning, the heat sou
 
 **Variables and parameters**
 
-| Symbol | Meaning | Type | Dimension | Units |
+| Symbol | Description | Type | Dimension | Units |
 |:---:|:---|:---:|:---:|:---:|
 | $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | $\theta$ | K |
 | $t$ | Time | Independent variable | T | s |
