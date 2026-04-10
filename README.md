@@ -35,7 +35,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 
 | Symbol | Meaning | Type | Dimension | Units |
 |:---:|:---|:---:|:---:|:---:|
-| $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | - | K |
+| $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | $\theta$ | K |
 | $t$ | Time | Independent variable | T | s |
 | $x$ | Horizontal position in room | variable | L | m |
 | $y$ | Vertical position in room | variable | L | m |
