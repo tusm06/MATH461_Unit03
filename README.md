@@ -105,12 +105,10 @@ $$
 - $u(x, y, 0)$ = room temperature.
 
 **Boundary conditions:**
+The walls are perfectly insulated (zero heat flux). Heat removal by air conditioning is modeled via the sink term L(u) uniformly across the domain, rather than through the boundary conditions.
+
 - $u_x(0, y, t) = u_x(3, y, t) = 0$
 - $u_y(x, 0, t) = u_y(x, 3, t) = 0$
-
-The walls are perfectly insulated (zero heat flux). Heat removal 
-by air conditioning is modeled via the sink term L(u) uniformly 
-across the domain, rather than through the boundary conditions.
 
 ## How will you answer your question?
 <!--* *Identify a mathematical quantity you will evaluate and criteria for evaluating it* *-->
