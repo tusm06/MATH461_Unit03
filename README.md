@@ -5,14 +5,14 @@
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
 
-In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temperature distribution within a room.
+In a cooking environment where heat is removed by air conditioning, the heat source is the thermal radiation emitted by the stove and cookware, which diffuses through the kitchen air at chef level. Convective updrafts and range hood extraction are not modeled. We would like to know how the radiant heat affects the chef, and the temperature distribution within the room.
 
 ## Question formulation
 <!--* *What question(s) would you like to answer about your setup above?* *-->
 
-- What size of window should it be (what the value of heat dissipation should reach) so that the chef can work in a sufferable temperature?
-- What the temperature distribution in the cooking room when the temperature reach the steady state?
-- Without the heat dissipation, how long will it take the room to reach the steady state?
+- What cooling power should the air conditioning provide (i.e. what value of $\beta$) so that the chef can work at a tolerable temperature?
+- What is the temperature distribution in the cooking room when steady state is reached?
+- Without air conditioning ($\beta = 0$), how long will it take the room to reach steady state?
 
 ## Mathematical model
 <!--* *Identify variables, parameters, equations. List your assumptions. Identify the mathematical quantity you will evaluate, in order to answer your question.* *-->
@@ -23,13 +23,12 @@ In a cooking environment with central air conditioning (or window) that heat can
 
 **Assumptions:**
 
-- The only way to make heat dissipation is the opened window.
-    - The wall and doors or any substance in the room will not take away the heat.
-- The stove is the only heat source, and can provide heat continuesly.
-    - Simulating the continuous cooking environment in a resturant.
-- the wok is not effect the heat transfering from the stove.
-- the dissipation rate will stay constant.
-- The temperature is transfored only in the horizontal and vertical direction of the birdview, the heat transfered in  height of the kitchen is ignored.
+- The only mechanism for heat removal is the air conditioning unit, which cools the room uniformly.
+    - The walls, doors, and all other surfaces are perfectly insulated and do not absorb or remove heat.
+- The stove and cookware are the only sources of thermal radiation, emitting heat continuously. This simulates a continuous cooking environment in a restaurant.
+- Convective heat transfer (e.g. updrafts, range hood extraction) is not modeled. Only lateral radiant diffusion at chef level is considered.
+- The dissipation rate will stay constant.
+- The temperature is modeled only in the horizontal plane (bird's-eye view). Variation in temperature with height is ignored; the domain represents a depth-averaged slice at chef level.
 
 **Variables and parameters**
 
@@ -40,11 +39,10 @@ In a cooking environment with central air conditioning (or window) that heat can
 | $x$ | Horizontal position in room | Independent variable | L | m |
 | $y$ | Vertical position in room | Independent variable | L | m |
 | $z$ | Height of the kichen | parameter | L | m|
-| $r$ | Radius of the stove | variable | L | m |
 | $T_a$ | Room temerature. | parameter | $\theta$ | K |
 | $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
-| $\beta$ | Heat dissipation rate (volumetric loss) | parameter | $1/T$ | s^-1 |
-| $\gamma$ | Constant heater source rate (stove heat input) | parameter | $(\theta L \sqrt{L} )/T$ | (K m $\sqrt{m}$)/s |
+| $\beta$ | Heat dissipation rate due to air conditioning | parameter | $1/T$ | s^-1 |
+| $\gamma$ | Effective radiant power emitted laterally by the stove and cookware into the surrounding air at chef level | parameter | $(\theta L \sqrt{L} )/T$ | (K m $\sqrt{m}$)/s |
 
 **Constraints:**
 - $t\ge0$.
@@ -110,12 +108,14 @@ $$
 - $u_x(0, y, t) = u_x(3, y, t) = 0$
 - $u_y(x, 0, t) = u_y(x, 3, t) = 0$
 
+The walls are perfectly insulated (zero heat flux). Heat removal 
+by air conditioning is modeled via the sink term L(u) uniformly 
+across the domain, rather than through the boundary conditions.
+
 ## How will you answer your question?
 <!--* *Identify a mathematical quantity you will evaluate and criteria for evaluating it* *-->
 
 - We use numerical methods to simulate and see the results of the heat to the chef.
-    - By changing the size of the window (i.e., changing $\beta$).
+    - By changing the cooling power of the air conditioning (i.e. changing $\beta$ where larger $\beta$ represents a stronger AC unit).
 - Stability analysis to check the stability of the model.
 - How long will the heat reach a certain threshold if not heat escape.
-
-<!--*TODO:  *--> 
