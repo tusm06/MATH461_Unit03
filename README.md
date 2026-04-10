@@ -5,7 +5,7 @@
 ## Problem description
 <!--**Describe, in words, the situation you would like to model*.*-->
 
-In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect xthe chef, and the temerature distribution within a room.
+In a cooking environment with central air conditioning (or window) that heat can escape the room, the only heat source is from the stove fire. There is a chef that is cooking, we would like to know how the heat would effect the chef, and the temperature distribution within a room.
 
 ## Question formulation
 <!--* *What question(s) would you like to answer about your setup above?* *-->
@@ -26,7 +26,7 @@ In a cooking environment with central air conditioning (or window) that heat can
 - The only way to make heat dissipation is the opened window.
     - The wall and doors or any substance in the room will not take away the heat.
 - The stove is the only heat source, and can provide heat continuesly.
-    - Simulating the countinuous cooking environment in a resturant.
+    - Simulating the continuous cooking environment in a resturant.
 - the wok is not effect the heat transfering from the stove.
 - the dissipation rate will stay constant.
 - The temperature is transfored only in the horizontal and vertical direction of the birdview, the heat transfered in  height of the kitchen is ignored.
@@ -37,9 +37,9 @@ In a cooking environment with central air conditioning (or window) that heat can
 |:---:|:---|:---:|:---:|:---:|
 | $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | $\theta$ | K |
 | $t$ | Time | Independent variable | T | s |
-| $x$ | Horizontal position in room | variable | L | m |
-| $y$ | Vertical position in room | variable | L | m |
-| $z$ | Height of the kichen | variable | L | m|
+| $x$ | Horizontal position in room | Independent variable | L | m |
+| $y$ | Vertical position in room | Independent variable | L | m |
+| $z$ | Height of the kichen | parameter | L | m|
 | $r$ | Radius of the stove | variable | L | m |
 | $T_a$ | Room temerature. | parameter | $\theta$ | K |
 | $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
@@ -60,7 +60,7 @@ $$
 \Omega = [0, 3]\times[0, 3]
 $$
 
-- The heat is added to the room at $(1.2, 0)$ (the location of the stove). 
+- The heat is added to the room at $(2.8, 1.5)$ (the location of the stove). 
 - The stove has a radius of $r$.
 
 **Equations:**
@@ -80,7 +80,7 @@ $$
 where we need $z\displaystyle\int\int S(x, y) dxdy = \gamma$. We can use Gaussian model such as 
 
 $$
-S(x, y) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.4)^2}{2\cdot \sigma}\right) ,
+S(x, y) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.5)^2}{2\cdot \sigma}\right) ,
 $$
 
 where $\sigma$ is the standard deviation. For instance, we can set $\sigma = 0.1$.
