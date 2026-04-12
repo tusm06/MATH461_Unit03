@@ -42,7 +42,7 @@ In a cooking environment where heat is removed by air conditioning, the heat sou
 | $T_a$ | Room temerature. | parameter | $\theta$ | K |
 | $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
 | $\beta$ | Heat dissipation rate due to air conditioning | parameter | $1/T$ | s^-1 |
-| $\gamma$ | Effective radiant power emitted laterally by the stove and cookware into the surrounding air at chef level | parameter | $(\theta L \sqrt{L} )/T$ | (K m $\sqrt{m}$)/s |
+| $\gamma$ | Effective radiant power emitted laterally by the stove and cookware into the surrounding air at chef level | parameter | $\theta L^3/T$ | K*m^3/s |
 
 **Constraints:**
 - $t\ge0$.
@@ -81,7 +81,7 @@ $$
 where we need $z\displaystyle\int\int S(x, y) dxdy = \gamma$. We can use Gaussian model such as 
 
 $$
-S(x, y) = \frac{\gamma/z}{\sqrt{2\pi \cdot \sigma}}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.5)^2}{2\cdot \sigma}\right) ,
+S(x, y) = \frac{\gamma/z}{2\pi \cdot \sigma^2}\exp\left(-\frac{(x - 2.8)^2 + (y - 1.5)^2}{2\cdot \sigma^2}\right) ,
 $$
 
 where $\sigma$ is the standard deviation. For instance, we can set $\sigma = 0.1$.
