@@ -35,14 +35,14 @@ In a cooking environment where heat is removed by air conditioning, the heat sou
 | Symbol | Description | Type | Dimension | Units |
 |:---:|:---|:---:|:---:|:---:|
 | $u(x,y,t)$ | Temperature at location $(x,y)$ and time $t$ | Dependent variable | $\theta$ | K |
-| $t$ | Time | Independent variable | T | s |
+| $t$ | Time | Independent variable | T | h |
 | $x$ | Horizontal position in room | Independent variable | L | m |
 | $y$ | Vertical position in room | Independent variable | L | m |
 | $z$ | Height of the kichen | parameter | L | m|
 | $T_a$ | Room temerature. | parameter | $\theta$ | K |
-| $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/s |
-| $\beta$ | Heat dissipation rate due to air conditioning | parameter | $1/T$ | s^-1 |
-| $\gamma$ | Effective radiant power emitted laterally by the stove and cookware into the surrounding air at chef level | parameter | $\theta L^3/T$ | K*m^3/s |
+| $\alpha$ | Thermal diffusivity of air |parameter | $L^2/T$ | m^2/h |
+| $\beta$ | Heat dissipation rate due to air conditioning | parameter | $1/T$ | h^-1 |
+| $\gamma$ | Effective radiant power emitted laterally by the stove and cookware into the surrounding air at chef level | parameter | $\theta L^3/T$ | K*m^3/h |
 
 **Constraints:**
 - $t\ge0$.
