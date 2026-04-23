@@ -56,7 +56,7 @@ Since the room is not very high, we consider the room as 2D with domain:
 
 $$
 \begin{align*}
-\Omega &= [0, 3]\times[0, 3] \\
+\Omega &= [0, 3] \times [0, 3] \\[0pt]
 &= \left\{ (x, y) \in\mathbb{R}^2 \mid 0 \le x \le 3 \land 0 \le y \le 3 \right\}
 \end{align*}
 $$
