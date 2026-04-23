@@ -55,10 +55,10 @@ In a cooking environment where heat is removed by air conditioning, the heat sou
 Since the room is not very high, we consider the room as 2D with domain:
 
 $$
-\begin{align*}
-\Omega &= [0, 3] \times [0, 3] \\[0pt]
-&= \left\{ (x, y) \in\mathbb{R}^2 \mid 0 \le x \le 3 \land 0 \le y \le 3 \right\}
-\end{align*}
+\begin{aligned}
+\Omega &= [0,3] \times [0,3] \\[0pt]
+       &= \{(x,y) \in \mathbb{R}^2 \mid 0 \le x \le 3,\ 0 \le y \le 3\}
+\end{aligned}
 $$
 
 - The heat is added to the room at $(2.8, 1.5)$ (the location of the stove). 
